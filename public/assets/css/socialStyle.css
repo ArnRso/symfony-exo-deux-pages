@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: red;
+    height: 10vh;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    background-color: green;
+    height: 80vh;
+    flex: 1;
+}
+
+section {
+    background-color: yellow;
+    flex: 3;
+    height: 80vh;
+}
+
+header, section, aside, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    background-color: blue;
+    height: 10vh;
+}
