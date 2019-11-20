@@ -1,7 +1,16 @@
-{% include 'commons/_head.html.twig' %}
+<!doctype html>
+<html lang="en">
+<head>
+    {% include 'commons/_head.html.twig' %}
+</head>
+<body>
+{% include 'commons/_header.html.twig' %}
 <main>
     {% block content %}
 
     {% endblock %}
 </main>
 {% include 'commons/_footer.html.twig' %}
+{% block javascripts %}{% endblock %}
+</body>
+</html>
