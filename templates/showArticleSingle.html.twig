@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="hero" style="background-image: url('{{ article.imgurl }}'); ">
+
+    </div>
+    <div class="fullArticle">
+        <h2>{{ article.titre }}</h2>
+        <p>{{ article.contenuFull | raw }}</p>
+    </div>
+{% endblock %}

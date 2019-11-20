@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+    <section>
+        {% for article in articles %}
+            <article class="full">
+                <div class="innerArticle">
+                    <div class="article-img">
+                        <img src="{{ article.imgurl }}" alt="" class="img-fluid">
+                    </div>
+                    <a href="{{ path('articleSingle', {'id': article.id }) }}"><h2>{{ article.titre }}</h2></a>
+                    <p>{{ article.contenuExtrait }}</p>
+                </div>
+            </article>
+        {% endfor %}
+        {% if articles|length % 3 == 2 %}
+            <article class="empty"></article>
+        {% endif %}
+        {% if articles|length % 3 == 1 %}
+            <article class="empty"></article>
+            <article class="empty"></article>
+        {% endif %}
+    </section>
+{% endblock %}
