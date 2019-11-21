@@ -11,7 +11,7 @@
 }
 
 header {
-    background-color: red;
+    background-color: green;
     height: 10vh;
 }
 
@@ -20,13 +20,13 @@ main {
 }
 
 aside {
-    background-color: green;
+    background-color: yellow;
     height: 80vh;
     flex: 1;
 }
 
 section {
-    background-color: yellow;
+    background-color: red;
     flex: 3;
     height: 80vh;
 }
